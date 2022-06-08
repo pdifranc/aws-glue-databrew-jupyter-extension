@@ -5,10 +5,11 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 8px 12px;
+  color: white;
 }
 
 #aws_glue_databrew_jupyter_left_side_launcher {
-  background: white;
+  background: #2D3949;
 }
 
 
@@ -16,8 +17,12 @@
   padding: 8px 20px;
 }
 
+#aws_glue_databrew_launch_button {
+  color: white;
+}
+
 #aws_glue_databrew_jupyter_left_side_launcher #aws_glue_databrew_launch_button:hover {
-  background: rgb(238, 238, 238);
+  background: #2D3949;
   cursor: pointer;
 }
 
