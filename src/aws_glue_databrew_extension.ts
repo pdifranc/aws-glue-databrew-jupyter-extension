@@ -10,7 +10,6 @@ import { GLUE_DATABREW_RENDER } from "./constants";
 import { LeftSideLauncher } from "./LeftSideLauncher";
 import { MainLauncher } from "./MainLauncher";
 
-const getAppVersion = (app: JupyterFrontEnd) => app.version;
 /**
  * Initialize the console widget extension
  */
@@ -23,12 +22,7 @@ export const initiateExtension = (
     restorer: ILayoutRestorer,
     launcher: ILauncher
   ) => {
-    const version = getAppVersion(app);
-
     const consoleWidget = MainLauncher.create();
-    // Create a blank content widget inside of a MainAreaWidget
-    //const content = new Widget();
-    //const widget = new MainAreaWidget({ content });
 
     app.commands.addCommand(GLUE_DATABREW_RENDER, {
       label: "Launch MLFlow",
@@ -39,6 +33,7 @@ export const initiateExtension = (
 
           const iframe = document.createElement("iframe");
 
+          // TODOs: do not hard code - make it dynamic
           iframe.setAttribute("src", "https://rp24ujrrrb.execute-api.eu-central-1.amazonaws.com/");
           iframe.setAttribute("width", "1600");
           iframe.setAttribute("height", "800");
@@ -49,7 +44,7 @@ export const initiateExtension = (
       },
     });
 
-    const launcherWidget = LeftSideLauncher.create(version, app.commands);
+    const launcherWidget = LeftSideLauncher.create(app.commands);
 
     restorer.add(launcherWidget as Widget, launcherWidget.id);
     app.shell.add(launcherWidget as Widget, "left");

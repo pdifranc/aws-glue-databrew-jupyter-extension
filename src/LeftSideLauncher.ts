@@ -27,9 +27,8 @@ export class LuminoLeftSideLauncher extends LuminoWidget {
 }
 
 export class LeftSideLauncher {
-  static create(version: string, commands: PhosphorCommandRegistry | LuminoCommandRegistry): PhosphorLeftSideLauncher | LuminoLeftSideLauncher {
-    const majorVersion = Number(version.split(".")[0]);
-    const widget = majorVersion === 1 ? new PhosphorLeftSideLauncher() : new LuminoLeftSideLauncher();
+  static create(commands: LuminoCommandRegistry): PhosphorLeftSideLauncher | LuminoLeftSideLauncher {
+    const widget = new LuminoLeftSideLauncher();
     widget.commands = commands;
 
     const launchButton = document.createElement("div");
@@ -37,9 +36,9 @@ export class LeftSideLauncher {
     header.className = "aws_glue_databrew_header";
     header.textContent = "MLFlow";
 
-    launchButton.title = "Welcome to AWS Glue DataBrew";
+    launchButton.title = "Welcome to AWS SageMaker Studio / MLflow integration";
     launchButton.id = "aws_glue_databrew_launch_button";
-    launchButton.textContent = "Launch MLFlow";
+    launchButton.textContent = "Access MLFlow";
 
     launchButton.onclick = widget.handleLaunchButtonClicked.bind(widget);
 
