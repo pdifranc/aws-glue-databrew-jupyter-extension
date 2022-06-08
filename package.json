@@ -1,6 +1,6 @@
 {
-  "name": "aws_mlflow_iframe_jupyterlab_extension",
-  "version": "0.1.0",
+  "name": "aws_glue_databrew_jupyter",
+  "version": "1.0.5",
   "description": "A JupyterLab Extension for MLFlow. It renders an MLFlow server on an iFrame.",
   "license": "MIT",
   "author": "frpaolo@amazon.at",
@@ -24,8 +24,8 @@
     "watch:local": "npm run clean && tsc-watch -p tsconfig_local.json --onSuccess 'npm run rename'"
   },
   "dependencies": {
-    "@jupyterlab/application": ">=3.3.0 <3.4.3",
-    "@jupyterlab/launcher": ">=3.3.0 <3.4.3",
+    "@jupyterlab/application": ">=3.3.0 <3.5.0",
+    "@jupyterlab/launcher": ">=3.3.0 <3.5.0",
     "@lumino/commands": "^1.20.0",
     "@lumino/widgets": "^1.32.1",
     "@phosphor/commands": "^1.0.0",
