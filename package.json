@@ -1,9 +1,9 @@
 {
-  "name": "aws_glue_databrew_jupyter",
-  "version": "1.0.5",
-  "description": "A JupyterLab Glue DataBrew extension.",
+  "name": "aws_mlflow_iframe_jupyterlab_extension",
+  "version": "0.1.0",
+  "description": "A JupyterLab Extension for MLFlow. It renders an MLFlow server on an iFrame.",
   "license": "MIT",
-  "author": "cfangzh@amazon.com, zssimjee@amazon.com, pagtkevi@amazon.com",
+  "author": "frpaolo@amazon.at",
   "files": [
     "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
     "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
