@@ -46,7 +46,7 @@ c.NotebookApp.port = 8888
 EOF
     chown -R ec2-user $JUPYTER_CONFIG_DIR
 echo "*********************Finished Writing Config File******************"
-jupyter labextension install aws_glue_databrew_jupyter
+jupyter labextension install aws_iframe_jupyter
 
 pip install --upgrade boto3
 pip install --upgrade awscli

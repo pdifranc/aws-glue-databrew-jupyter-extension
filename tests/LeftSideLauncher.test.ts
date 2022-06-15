@@ -7,7 +7,7 @@ describe("LeftSideLauncher", () => {
       const execute = jest.fn(() => undefined);
       const command: Partial<CommandRegistry> = { execute };
       const widget = LeftSideLauncher.create(version, command as CommandRegistry);
-      expect(widget.id).toBe("aws_glue_databrew_jupyter_left_side_launcher");
+      expect(widget.id).toBe("aws_iframe_jupyter_left_side_launcher");
       expect(widget.title.iconClass).toBe(
         "jp-databrew-logo jp-SideBar-tabIcon"
       );

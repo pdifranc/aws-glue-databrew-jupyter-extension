@@ -3,7 +3,7 @@
 exports[`MainLauncher create should create launcher v1.0.0 1`] = `
 <div
   class="p-Widget"
-  id="aws_glue_databrew_jupyter"
+  id="aws_iframe_jupyter"
 >
   <html
     style="height: 100%"
@@ -136,7 +136,7 @@ exports[`MainLauncher create should create launcher v1.0.0 1`] = `
 exports[`MainLauncher create should create launcher v1.0.0 in CN region 1`] = `
 <div
   class="p-Widget"
-  id="aws_glue_databrew_jupyter"
+  id="aws_iframe_jupyter"
 >
   <html
     style="height: 100%"
@@ -269,7 +269,7 @@ exports[`MainLauncher create should create launcher v1.0.0 in CN region 1`] = `
 exports[`MainLauncher create should create launcher v1.0.0 with null region 1`] = `
 <div
   class="p-Widget"
-  id="aws_glue_databrew_jupyter"
+  id="aws_iframe_jupyter"
 >
   <html
     style="height: 100%"
@@ -402,7 +402,7 @@ exports[`MainLauncher create should create launcher v1.0.0 with null region 1`] 
 exports[`MainLauncher create should create launcher v1.0.0 with undefined region 1`] = `
 <div
   class="p-Widget"
-  id="aws_glue_databrew_jupyter"
+  id="aws_iframe_jupyter"
 >
   <html
     style="height: 100%"
@@ -535,7 +535,7 @@ exports[`MainLauncher create should create launcher v1.0.0 with undefined region
 exports[`MainLauncher create should create launcher v2.0.0 1`] = `
 <div
   class="lm-Widget p-Widget"
-  id="aws_glue_databrew_jupyter"
+  id="aws_iframe_jupyter"
 >
   <html
     style="height: 100%"
@@ -668,7 +668,7 @@ exports[`MainLauncher create should create launcher v2.0.0 1`] = `
 exports[`MainLauncher create should create launcher v2.0.0 in CN region 1`] = `
 <div
   class="lm-Widget p-Widget"
-  id="aws_glue_databrew_jupyter"
+  id="aws_iframe_jupyter"
 >
   <html
     style="height: 100%"
@@ -801,7 +801,7 @@ exports[`MainLauncher create should create launcher v2.0.0 in CN region 1`] = `
 exports[`MainLauncher create should create launcher v2.0.0 with null region 1`] = `
 <div
   class="lm-Widget p-Widget"
-  id="aws_glue_databrew_jupyter"
+  id="aws_iframe_jupyter"
 >
   <html
     style="height: 100%"
@@ -934,7 +934,7 @@ exports[`MainLauncher create should create launcher v2.0.0 with null region 1`] 
 exports[`MainLauncher create should create launcher v2.0.0 with undefined region 1`] = `
 <div
   class="lm-Widget p-Widget"
-  id="aws_glue_databrew_jupyter"
+  id="aws_iframe_jupyter"
 >
   <html
     style="height: 100%"

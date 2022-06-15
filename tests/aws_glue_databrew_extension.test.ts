@@ -3,7 +3,7 @@ import { ServiceManager, ServerConnection } from "@jupyterlab/services";
 import { ICommandPalette } from "@jupyterlab/apputils";
 import { ILauncher } from "@jupyterlab/launcher";
 import { CommandRegistry } from "@lumino/commands";
-import * as plugin from "../src/aws_glue_databrew_extension";
+import * as plugin from "../src/aws_iframe_extension";
 import { LuminoMainLauncher, MainLauncher } from "../src/MainLauncher";
 import { LeftSideLauncher, LuminoLeftSideLauncher } from "../src/LeftSideLauncher";
 import * as client from "../src/client";
@@ -12,7 +12,7 @@ describe("initiateExtension", () => {
   test("should return extension object", () => {
     const getPaths = jest.fn().mockReturnValueOnce(Promise.resolve(["main.js", "styles.css"]));
     const extension = plugin.initiateExtension(getPaths);
-    expect(extension.id).toBe("aws_glue_databrew_jupyter");
+    expect(extension.id).toBe("aws_iframe_jupyter");
     expect(extension.autoStart).toBe(true);
     expect(extension.requires).toEqual([ICommandPalette, ILayoutRestorer, ILauncher]);
     expect(extension.activate).toEqual(expect.any(Function));

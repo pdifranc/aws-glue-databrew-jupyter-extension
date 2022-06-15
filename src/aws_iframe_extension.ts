@@ -6,7 +6,7 @@ import {
 import { ICommandPalette } from "@jupyterlab/apputils";
 import { ILauncher } from "@jupyterlab/launcher";
 import { Widget } from "@lumino/widgets";
-import { GLUE_DATABREW_RENDER } from "./constants";
+import { IFRAME_RENDER } from "./constants";
 import { LeftSideLauncher } from "./LeftSideLauncher";
 import { MainLauncher } from "./MainLauncher";
 
@@ -24,7 +24,7 @@ export const initiateExtension = (
   ) => {
     const consoleWidget = MainLauncher.create();
 
-    app.commands.addCommand(GLUE_DATABREW_RENDER, {
+    app.commands.addCommand(IFRAME_RENDER, {
       label: "Launch MLFlow",
       icon: "jp-databrew-logo",
       execute: () => {
@@ -50,10 +50,10 @@ export const initiateExtension = (
     app.shell.add(launcherWidget as Widget, "left");
 
     // Add the command to the palette.
-    palette.addItem({ command: GLUE_DATABREW_RENDER, category: "Launcher" });
+    palette.addItem({ command: IFRAME_RENDER, category: "Launcher" });
     if (launcher) {
       const launcher_item: ILauncher.IItemOptions = {
-        command: GLUE_DATABREW_RENDER,
+        command: IFRAME_RENDER,
         args: {
           newBrowserTab: true,
           title: "Launch MLFlow",
@@ -67,7 +67,7 @@ export const initiateExtension = (
   };
 
   const extension: JupyterFrontEndPlugin<void> = {
-    id: "aws_glue_databrew_jupyter",
+    id: "aws_iframe_jupyter",
     autoStart: true,
     requires: [ICommandPalette, ILayoutRestorer, ILauncher],
     activate: activate,

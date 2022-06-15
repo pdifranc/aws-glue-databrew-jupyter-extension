@@ -1,5 +1,5 @@
 {
-  "name": "aws_glue_databrew_jupyter",
+  "name": "aws_iframe_jupyter",
   "version": "1.0.5",
   "description": "A JupyterLab Extension for MLFlow. It renders an MLFlow server on an iFrame.",
   "license": "MIT",

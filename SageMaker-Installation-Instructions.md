@@ -32,7 +32,7 @@ jupyter serverextension enable --py aws_jupyter_proxy
 Download and install the latest version of DataBrew JupyterLab extension, and build Jupyter assets.
 
 ```
-jupyter labextension install aws_glue_databrew_jupyter --minimize=False
+jupyter labextension install aws_iframe_jupyter --minimize=False
 ```
 
 3. Restart the Jupyter server

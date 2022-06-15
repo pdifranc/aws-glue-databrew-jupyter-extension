@@ -28,7 +28,7 @@ export class MainLauncher {
 
     //const awsText = isCnPartition(region) ? "Amazon" : "AWS";
     //widget.cssPath = cssPath;
-    widget.id = "aws_glue_databrew_jupyter";
+    widget.id = "aws_iframe_jupyter";
     widget.title.label = "MLFlow";
     widget.title.closable = true;
 

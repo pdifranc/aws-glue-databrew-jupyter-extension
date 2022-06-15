@@ -1,4 +1,4 @@
-# aws_glue_databrew_jupyter
+# aws_iframe_jupyter
 
 This is an extension for Jupyter Lab that allows you to manage your AWS Glue Databrew resources in-context of your existing Jupyter workflows. 
 
@@ -7,16 +7,16 @@ This is an extension for Jupyter Lab that allows you to manage your AWS Glue Dat
 1. boto3 version 1.16.17 or greater
 1. botocore version 1.19.17 or greater
 1. configure the aws cli. https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
-1. jupyter lab version 1.2 or 2.x
+1. jupyter lab version 3.x
 
 ### Installation instructions for Jupyter Lab
 
 1. run `pip install aws-jupyter-proxy`
 1. run `jupyter serverextension enable --py aws_jupyter_proxy`
-1. Search for aws_glue_databrew_jupyter in the Jupyter Lab plugin store and click install
+1. Search for aws_iframe_jupyter in the Jupyter Lab plugin store and click install
 
 ### Command-line installation instructions
-1. run `jupyter labextension install aws_glue_databrew_jupyter`
+1. run `jupyter labextension install aws_iframe_jupyter`
 1. Start jupyter lab: `jupyter lab`
 
 

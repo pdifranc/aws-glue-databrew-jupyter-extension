@@ -2,7 +2,7 @@ import setuptools
 
 
 setuptools.setup(
-    name='aws_glue_databrew_jupyter_extension',
+    name='aws_iframe_jupyter_extension',
     version='1.0.0',
     packages=setuptools.find_packages(),
     install_requires=[
@@ -15,7 +15,7 @@ setuptools.setup(
     data_files=[
         (
             "etc/jupyter/jupyter_notebook_config.d",
-            ["aws_glue_databrew_jupyter_extension/etc/aws_glue_databrew_jupyter_extension.json"],
+            ["aws_iframe_jupyter_extension/etc/aws_iframe_jupyter_extension.json"],
         )
     ],
 )
